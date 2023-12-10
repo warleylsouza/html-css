@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico.ico" type="image/x-icon">  <!--parametro para Adicionar imagem favicon-->
+    <title>Trabalhando com links</title>
+
+</head>
+<body>
+    <h1>Usando links externos</h1>
+
+    <p>Voce pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio publico no github</a></p>
+    <p>Voce tambem pode acessar meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal gratuito no youtube</a>
+    </p>
+    
+    <p>Estou estudando <abbr title="Hyper Text Markup language">HTML</abbr> para criar sites</p> <!--<abbr> </abb> texto com abreviação-->
+
+    <h1>Usando links internos</h1>
+    
+    <p>Esta é a primeira pagina do site.Se voce quiser, pode acessar também minha <a href="pag002.html" rel="next" target="_self">Segunda pagina</a></p><!--para abrir na própria pagina target_self na própria aba-->
+
+    <p>Voce tambem pode acessar nossa<a href="noticias/pag003.html" rel="next " target="_self"> pagina de noticias</a>
+    </p><!--para abrir na própria pagina target_self na própria aba-->
+
+    <p>Voce tambem pode acessar nossa <a href="pag004.html" rel="next" target="_self">Pagina de esportes</a>
+        
+    </p><!--para abrir na própria pagina target_self na própria aba-->
+
+    <h1>Desafios</h1>
+    <p>Este é o acesso da minha pagina de <a href="pag005.html" rel="next" target="_self">Desafio social</a></p><!--para abrir na própria pagina target_self na própria aba-->
+
+    <p>Este é o acesso da minha pagina de <a href="pag006.html" rel="next" target="_self">Tags em HTML</a></p><!--para abrir na própria pagina target_self na própria aba-->
+
+
+    <h1> <bdo dir="ltr">Links para downloads</bdo> </h1><!--tag bdo para inverter textos rtl e ltr-->
+    <ul>
+        <li><a href="livro/pythonlearn.pdf" download="pythonlearn.pdf"
+            type="application/pdf">Baixar o livro pdf</a></li><!--Baixando arquivos em pdf ao aproximar o mouser do baixar ,voce pode salvar o arquivo direto em pdf-->
+        <li><a href="livro/pythonlearn.zip" download="pythonlearn.zip" type="application/zip">Livro compactado em zip</a></li><!--Baixando arquivos zip sempre colocar o midia download="nome do arquivo zip"  type="application/zip" -->
+
+    </ul>
+</body>
+</html>

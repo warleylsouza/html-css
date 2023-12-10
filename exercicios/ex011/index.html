@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico.ico" type="image/x-icon">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture><!--tag <picture> permite que eu parametrize varias soucers ou várias midias-->
+        <source media="(max-width:200px )" srcset="imagem/foto-mini.png" type="image/png"><!--depois vem a imagem pequena /celular-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png"> <!--depois vem a imagem media/tablet-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"><!--depois vem a imagem grande/computador-->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture> <!--Primeiro vem a foto grande (acabamos de aprender com mídias de tamanho diferente utilizando a tag <picture> a base é a imagem padrão que você carregar, acima dela, vai colocando os soucers na ordem)-->
+
+        <h1>Reproduzindo Audio</h1>
+        <p>Vamos aprender a reproduzir audios em HTML5.</p>   
+        <audio src="midia/Fantasyland - Quincas Moreira.mp3"  controls autoplay></audio> <!--MP3 WAV OGG-->
+        <audio>
+            <audio preload="metadata" autoplay controls loop>
+            
+            <source src="midia/Fantasyland - Quincas Moreira.mp3" type="audio/mpeg"> <!--Audio mpeg-->
+            <source src="midia/Fantasyland - Quincas Moreira.ogg" type="audio/ogg"><!--Audio ogg-->
+            <source src="midia/Fantasyland - Quincas Moreira.wav" type="audio/wav"> <!--Arquivo wav evitar usar, muito pesado ,Audio wav--><!-- Ele fará uma tentativa de tres vezes antes de entrar em falha, caso nao execute os comandos acima , ele continuara o programa abaixo-->
+            
+            <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/Fantasyland - Quincas Moreira.mp3" download="Fantasyland - Quincas Moreira.mp3" type="audio/mpeg">Clique aqui para baixar arquivos mp3</a></p>
+       </audio>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* em Html é id = em Css é # ( So pode um elemento)
+em Html é class = em css é (.) (pode varios elementos)
+*/
+
+body{
+    background-color: #b5ceb8;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+h1#principal{
+    text-align: center;  /* seletor personalizado vc pode colocar o h1 ou somente colocar #principal*/
+    background-color: #196B28;
+    color: #f0f8ff;
+   
+    
+}
+
+h2{
+    color: rgb(51, 78, 35)
+    
+}
+
+.Basico{
+color: #28301b;
+
+
+}
+.intermediario{
+color: #a1620a;
+}
+.avancado{
+color: #663f55;
+}
+.destaque{
+    background-color: #f1f18c;
+}
