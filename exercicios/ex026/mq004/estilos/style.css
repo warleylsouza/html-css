@@ -31,6 +31,7 @@
         margin-top: 20px;
         border-radius:10px;
     }
+
     h1 {
         text-align: center;
         color: white;
@@ -49,7 +50,7 @@
         display: block;
     }
     img#tablet {
-    display: none;
+        display: none;
     }
     img#print {
         display: none;
